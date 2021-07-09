@@ -13,7 +13,7 @@ import ReactDOM from 'react-dom';
 /*---------------------------
 | Components
 ---------------------------*/
-import Main from './React/Main.jsx';
+import App from './React/App.jsx';
 
 /*---------------------------
 | Global Styles
@@ -24,4 +24,4 @@ import './css/global.scss';
 /*---------------------------
 | Render to DOM
 ---------------------------*/
-ReactDOM.render(<Main />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
