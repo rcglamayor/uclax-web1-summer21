@@ -1,14 +1,16 @@
 import React from 'react';
-import SunAndMoon from './SunAndMoon/SunAndMoon.jsx';
-import Homework from './Homework/Homework.jsx';
+import Header from './Layout/Header.jsx';
+import Nav from './Layout/Nav.jsx';
+import Main from './Layout/Main.jsx';
+import Footer from './Layout/Footer.jsx';
 
 const App = () => {
-
     return (
         <div>
-            <h1>My Cool React App</h1>
-            <SunAndMoon />
-            <Homework />
+            <Header />
+            <Nav />
+            <Main />
+            <Footer />
         </div>
     );
 }

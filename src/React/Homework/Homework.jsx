@@ -6,7 +6,6 @@ const Homework = () => {
 
     return (
         <HomeworkStyled className='Homework'>
-            Homework
             <Essay
                 number={ 1 }
                 question='What is the difference between Git, Github, and Heroku?'
@@ -18,6 +17,12 @@ const Homework = () => {
                 question='What is the difference between HTML, CSS, and JS?'
             >
                 My long winded answer 2. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto delectus, laudantium nostrum, aliquam eaque recusandae aspernatur iure iusto veniam temporibus dignissimos provident fugiat quod nemo minus excepturi eum voluptatum! At.
+            </Essay>
+            <Essay
+                number={ 3 }
+                question='Next question'
+            >
+                My long winded answer 3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto delectus, laudantium nostrum, aliquam eaque recusandae aspernatur iure iusto veniam temporibus dignissimos provident fugiat quod nemo minus excepturi eum voluptatum! At.
             </Essay>
         </HomeworkStyled>
     );
