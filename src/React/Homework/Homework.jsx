@@ -1,11 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import Essay from './Essay.jsx';
+import SunAndMoon from '../SunAndMoon/SunAndMoon.jsx';
 
 const Homework = () => {
 
     return (
-        <HomeworkStyled className='Homework'>
+        <div>
+            <SunAndMoon />
+            <h2>Homework</h2>
             <Essay
                 number={ 1 }
                 question='What is the difference between Git, Github, and Heroku?'
@@ -30,12 +33,8 @@ const Homework = () => {
             >
                 My long winded answer 3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto delectus, laudantium nostrum, aliquam eaque recusandae aspernatur iure iusto veniam temporibus dignissimos provident fugiat quod nemo minus excepturi eum voluptatum! At.
             </Essay>
-        </HomeworkStyled>
+        </div>
     );
 }
 
 export default Homework;
-
-const HomeworkStyled = styled.div`
-    
-`;
