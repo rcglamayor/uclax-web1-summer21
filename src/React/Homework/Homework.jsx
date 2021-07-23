@@ -24,6 +24,12 @@ const Homework = () => {
             >
                 My long winded answer 3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto delectus, laudantium nostrum, aliquam eaque recusandae aspernatur iure iusto veniam temporibus dignissimos provident fugiat quod nemo minus excepturi eum voluptatum! At.
             </Essay>
+            <Essay
+                number={ 4 }
+                question='What is the difference between Web Designer, Front End Developer and Back End Developer?'
+            >
+                My long winded answer 3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto delectus, laudantium nostrum, aliquam eaque recusandae aspernatur iure iusto veniam temporibus dignissimos provident fugiat quod nemo minus excepturi eum voluptatum! At.
+            </Essay>
         </HomeworkStyled>
     );
 }
