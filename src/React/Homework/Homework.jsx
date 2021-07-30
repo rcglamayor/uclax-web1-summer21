@@ -1,13 +1,21 @@
 import React from 'react';
-import styled from 'styled-components';
+
+import { useMediaQuery } from 'common/mediaQueries/useMediaQuery.js';
+
 import Essay from './Essay.jsx';
 import SunAndMoon from '../SunAndMoon/SunAndMoon.jsx';
 
 const Homework = () => {
 
+    const { media } = useMediaQuery();
+
+    console.log('media', media);
+
     return (
         <div>
-            <SunAndMoon />
+            
+            { media.mdUp && <SunAndMoon /> }
+
             <h2>Homework</h2>
             <Essay
                 number={ 1 }

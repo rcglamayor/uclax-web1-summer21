@@ -13,5 +13,5 @@ const Info = () => {
 export default Info;
 
 const InfoStyled = styled.div`
-    
+    background-color: yellow;
 `;
