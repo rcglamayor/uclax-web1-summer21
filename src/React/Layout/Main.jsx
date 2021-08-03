@@ -39,8 +39,8 @@ const MainStyled = styled.main`
     background-color: #aadbdb;
     padding: 20px;
 
-    div {
+    /* div {
         border: solid 2px red;
         padding: 20px;
-    }
+    } */
 `;
