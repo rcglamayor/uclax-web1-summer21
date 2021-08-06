@@ -1,12 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Lightbox from 'React/Components/Lightbox/Lightbox.jsx';
+
 const StaffMember = ({member}) => {
+
+    const LightboxContent = () => {
+        return (
+            <div>
+                <img src={ member.image } alt={ member.name } /> 
+                <h3>{ member.name }</h3>
+            </div>
+        );
+    }
 
     return (
         <StaffMemberStyled className='StaffMember'>
-            <img src={ member.image } alt={ member.name } /> 
-            <h3>{ member.name }</h3>
+            <Lightbox LightboxContent={ LightboxContent }>
+                <img src={ member.image } alt={ member.name } /> 
+                <h3>{ member.name }</h3>
+            </Lightbox>
         </StaffMemberStyled>
     );
 }
