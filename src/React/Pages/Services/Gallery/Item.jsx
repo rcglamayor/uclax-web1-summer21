@@ -1,12 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Lightbox from 'React/Components/Lightbox/Lightbox.jsx';
+
 const Item = ({ service }) => {
+
+    const LightboxContent = () => {
+        return (
+            <div>
+                <img src={ service.image } alt={ service.title } /> 
+                <h3>{ service.title }</h3>
+                <p>{ service.cost }</p>
+                <p>{ service.description }</p>
+            </div>
+        );
+    }
 
     return (
         <ItemStyled className='Item'>
-            <img src="/img/Services/service-1.jpg" alt="service1" />
-            <h3>{ service.title }</h3>
+            <Lightbox LightboxContent={ LightboxContent }>
+                <img src="/img/Services/service-1.jpg" alt="service1" />
+                <h3>{ service.title }</h3>
+            </Lightbox>
         </ItemStyled>
     );
 }
@@ -24,5 +39,8 @@ const ItemStyled = styled.div`
         padding 5px;
         font-size: 18px;
         margin: 0px;
+    }
+    p {
+        margin: 0px 0px 5px 0px;
     }
 `;
