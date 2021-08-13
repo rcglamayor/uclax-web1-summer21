@@ -1,11 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Container from './Container.jsx';
+
 const Services = () => {
 
     return (
         <ServicesStyled className='Services'>
-            Services page
+            <h1>Services</h1>
+            <Container />
         </ServicesStyled>
     );
 }
