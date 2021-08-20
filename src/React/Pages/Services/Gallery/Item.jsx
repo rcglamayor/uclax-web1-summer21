@@ -1,25 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { useMediaQuery } from 'common/mediaQueries/useMediaQuery';
+
 import Lightbox from 'React/Components/Lightbox/Lightbox.jsx';
 
 const Item = ({ service }) => {
+
+    const { media } = useMediaQuery();
 
     const LightboxContent = () => {
         return (
             <div>
                 <img src={ service.image } alt={ service.title } /> 
                 <h3>{ service.title }</h3>
-                <p>{ service.cost }</p>
+                <div className="cost">{ service.cost }</div>
                 <p>{ service.description }</p>
             </div>
         );
     }
 
+    const width = (media.mdUp) ? '400px' : '200px';
+
     return (
         <ItemStyled className='Item'>
-            <Lightbox LightboxContent={ LightboxContent }>
-                <img src="/img/Services/service-1.jpg" alt="service1" />
+            <Lightbox LightboxContent={ LightboxContent } width={ width }>
+                <img src={ service.image } alt={ service.title } />
                 <h3>{ service.title }</h3>
             </Lightbox>
         </ItemStyled>
@@ -36,11 +42,11 @@ const ItemStyled = styled.div`
     h3 {
         background-color: teal;
         color: #fff;
-        padding 5px;
+        padding: 5px;
         font-size: 18px;
         margin: 0px;
     }
     p {
-        margin: 0px 0px 5px 0px;
+        /* margin: 0px 0px 5px 0px; */
     }
 `;

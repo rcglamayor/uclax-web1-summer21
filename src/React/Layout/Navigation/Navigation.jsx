@@ -12,7 +12,7 @@ const Navigation = () => {
     const [showMenu, showMenuUpdate] = useState(false);
     const { media } = useMediaQuery();
 
-    console.log('media.mdUp', media.mdUp);
+    // console.log('media.mdUp', media.mdUp);
 
     useEffect(() => {
         showMenuUpdate(media.mdUp);
