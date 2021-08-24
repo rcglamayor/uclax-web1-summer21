@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const FormLabel = () => {
+const FormLabel = ({ control }) => {
 
     return (
         <FormLabelStyled className='FormLabel'>
-            FormLabel 
+            <label htmlFor={ control.id }>{ control.label }</label> 
         </FormLabelStyled>
     );
 }
@@ -13,5 +13,6 @@ const FormLabel = () => {
 export default FormLabel;
 
 const FormLabelStyled = styled.div`
-    
+    font-size: 20px;
+    font-weight: bold;
 `;

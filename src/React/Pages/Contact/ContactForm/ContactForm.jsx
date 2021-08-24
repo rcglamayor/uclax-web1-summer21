@@ -5,9 +5,32 @@ import UniversalForm from 'React/Components/UniversalForm/UniversalForm';
 
 const ContactForm = () => {
 
+    const defaultFormData = {
+        controls: [
+            {
+                id: 'fullname',
+                label: 'Full Name',
+                value: '',
+                type: 'text',
+            },
+            {
+                id: 'email',
+                label: 'Email',
+                value: '',
+                type: 'text',
+            },
+            {
+                id: 'message',
+                label: 'Message',
+                value: '',
+                type: 'textarea',
+            },
+        ]
+    }
+
     return (
         <ContactFormStyled className='ContactForm'>
-            <UniversalForm /> 
+            <UniversalForm defaultFormData={ defaultFormData } /> 
         </ContactFormStyled>
     );
 }

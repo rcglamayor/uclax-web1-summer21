@@ -39,7 +39,7 @@ const ContactStyled = styled.div`
         }
     }
     
-    background-color: pink;
+    /* background-color: pink;
 
     @media (min-width: 800px) {
         background-color: orange;
@@ -56,5 +56,5 @@ const ContactStyled = styled.div`
         @media ${mediaQueries.md} {
             background-color: #000;
         }
-    }
+    } */
 `;
