@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
 
+import Context from '../../Context/index.js';
+import { submitForm } from '../../Context/actions.js';
+
 const SubmitButton = () => {
+
+    const { dispatch, state } = useContext(Context);
 
     const handleClick = (e) => {
         e.preventDefault();
         console.log('form submitted');
+        submitForm(dispatch, state);
     }
 
     return (

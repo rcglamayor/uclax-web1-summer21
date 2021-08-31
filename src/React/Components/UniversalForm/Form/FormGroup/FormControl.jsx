@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Input from '../Controls/Input.jsx';
 import Textarea from '../Controls/Textarea.jsx';
+import FormMessage from './FormMessage.jsx';
 
 const FormControl = ({ control }) => {
 
@@ -20,6 +21,7 @@ const FormControl = ({ control }) => {
     return (
         <FormControlStyled className='FormControl'>
             <ControlComponent control={ control } /> 
+            <FormMessage control={ control } /> 
         </FormControlStyled>
     );
 }

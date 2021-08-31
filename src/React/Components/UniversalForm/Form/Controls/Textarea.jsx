@@ -12,9 +12,11 @@ const Textarea = ({control}) => {
         updateControl(control.id, e.target.value, dispatch, state);        
     }
 
+    const className = (!control.validation.isValid) ? 'Input error':'Input';
+
     return (
         <TextareaStyled
-            className='Textarea'
+            className={ className }
             id={ control.id }
             value={ control.value }
             onChange={ handleUpdate }
